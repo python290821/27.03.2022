@@ -8,9 +8,8 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # localhost:5000/
-@app.route("/index.html")
+@app.route("/")
 def home():
-    #
-    return render_template('index.html')
+    return render_template('math1.html')
 
 app.run()
